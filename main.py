@@ -1,4 +1,4 @@
-write a simulation of a real life event using at least 1 random input
+#write a simulation of a real life event using at least 1 random input
 #reseach list indexing and enumaration 
 import random
 #conversation with someone? Maybe a lottery? growing up w/ choices? neighborhood library take a book leave a book
