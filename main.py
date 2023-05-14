@@ -23,19 +23,19 @@ def randList():
 
 #User can select which book to 'keep' and add a book to the list
 def dayOne():
-    print("Hello, welcome to the neighborhood 'Take a Book, Leave a Book' library.\nHere are today's books:")
+    print("Hello, welcome to the neighborhood 'Take a Book, Leave a Book' library.\n\nHere are today's books:\n")
 
 def selectBook():
-    book = int(input("To select a book, type it's number: "))
+    book = int(input("\nTo select a book, type it's number: "))
     print(library[int(book)])
 
-    bookNew = str(input("Replace " + (library[int(book)]) + " by typing the new name and author of your book: "))
+    bookNew = str(input("\nReplace " + (library[int(book)]) + " by typing the new name and author of your book: "))
     library[int(book)] = bookNew
     for i in enumerate(library):
         print(i)
 
 def playOn():
-    g = input("Type 'y' if you'd like to revisit the neighborhood library\nor\nType 'n' if you'd like to exit the program:\n")
+    g = input("\nType 'y' if you'd like to revisit the neighborhood library\n\nor\nType 'n' if you'd like to exit the program:\n\n")
     if g == "y":
         dayOne()
         randList()
@@ -44,7 +44,7 @@ def playOn():
     if g == "n":
         quit()
     else:
-        print("Invalid input. Please make sure your answer is only 'y' or 'n'")
+        print("\nInvalid input. Please make sure your answer is only 'y' or 'n'")
         playOn()
 
 dayOne()
